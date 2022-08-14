@@ -1,0 +1,3 @@
+"lint:css": "npx stylelint **/*.{vue,css} --fix",
+"lint:js_html": "npx eslint . --fix",
+"lint:all": "npx eslint . --fix && npx stylelint **/*.{vue,css} --fix"

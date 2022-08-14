@@ -1,0 +1,14 @@
+Programas:
+	Minecraft (Optifine)
+	Steam
+	Configurador fnmt certificado digital
+	Matlab
+	Rivalcfg
+
+Generar clave ssh para GitHub
+
+Cómo configurar el atajo de teclado para desactivar el touchpad. En Settings > Keyboard > Shortcuts
+
+
+
+

@@ -1,0 +1,122 @@
+<code_scheme name="DefaultSamuel" version="173">
+  <option name="OTHER_INDENT_OPTIONS">
+    <value>
+      <option name="TAB_SIZE" value="5" />
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </value>
+  </option>
+  <option name="LINE_SEPARATOR" value="&#10;" />
+  <option name="RIGHT_MARGIN" value="100" />
+  <option name="FORMATTER_TAGS_ENABLED" value="true" />
+  <option name="SOFT_MARGINS" value="90" />
+  <HTMLCodeStyleSettings>
+    <option name="HTML_UNIFORM_INDENT" value="true" />
+    <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="" />
+  </HTMLCodeStyleSettings>
+  <JavaCodeStyleSettings>
+    <option name="CLASS_NAMES_IN_JAVADOC" value="3" />
+    <option name="SPACE_INSIDE_ONE_LINE_ENUM_BRACES" value="true" />
+    <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="30" />
+    <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="20" />
+    <option name="PACKAGES_TO_USE_IMPORT_ON_DEMAND">
+      <value />
+    </option>
+    <option name="JD_ADD_BLANK_AFTER_PARM_COMMENTS" value="true" />
+    <option name="JD_ADD_BLANK_AFTER_RETURN" value="true" />
+  </JavaCodeStyleSettings>
+  <JetCodeStyleSettings>
+    <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
+  </JetCodeStyleSettings>
+  <MSSQLCodeStyleSettings version="6">
+    <option name="USE_GENERIC_STYLE" value="true" />
+  </MSSQLCodeStyleSettings>
+  <OracleCodeStyleSettings version="6">
+    <option name="USE_GENERIC_STYLE" value="true" />
+  </OracleCodeStyleSettings>
+  <ScalaCodeStyleSettings>
+    <option name="MULTILINE_STRING_CLOSING_QUOTES_ON_NEW_LINE" value="true" />
+  </ScalaCodeStyleSettings>
+  <SqlCodeStyleSettings version="6">
+    <option name="KEYWORD_CASE" value="2" />
+    <option name="TYPE_CASE" value="1" />
+    <option name="CUSTOM_TYPE_CASE" value="1" />
+    <option name="ALIAS_CASE" value="4" />
+    <option name="QUOTE_IDENTIFIER" value="2" />
+    <option name="QUOTE_TYPE" value="31" />
+    <option name="QUERY_EL_COMMA" value="2" />
+    <option name="SUBQUERY_OPENING" value="1" />
+    <option name="SUBQUERY_CONTENT" value="3" />
+    <option name="SUBQUERY_CLOSING" value="4" />
+    <option name="INSERT_INTO_NL" value="2" />
+    <option name="INSERT_TABLE_EL_LINE" value="1" />
+    <option name="INSERT_VALUES_EL_LINE" value="1" />
+    <option name="INSERT_EL_COMMA" value="2" />
+    <option name="SET_EL_LINE" value="1" />
+    <option name="SELECT_ALIGN_AS" value="false" />
+    <option name="FROM_WRAP_ON" value="true" />
+    <option name="FROM_INDENT_JOIN" value="false" />
+    <option name="FROM_ONLY_JOIN_INDENT" value="1" />
+    <option name="WHERE_EL_LINE" value="1" />
+    <option name="WHERE_EL_WRAP" value="3" />
+    <option name="WHERE_EL_BOUND" value="0" />
+    <option name="CONSTRAINT_WRAP_1" value="false" />
+    <option name="CONSTRAINT_WRAP_3" value="true" />
+    <option name="CONSTRAINT_WRAP_4" value="true" />
+    <option name="VIEW_WRAP_AS" value="true" />
+    <option name="VIEW_INDENT_QUERY" value="true" />
+    <option name="ROUTINE_AS_WRAP" value="true" />
+    <option name="IMP_COMMON_KEEP_BLANK_LINES_IN_CODE" value="1" />
+    <option name="IMP_DECLARE_CONTENT_WRAP" value="false" />
+    <option name="IMP_DECLARE_ALIGN_TYPE" value="false" />
+    <option name="IMP_DECLARE_ALIGN_EQ" value="false" />
+    <option name="EXPR_CASE_WHEN_WRAP" value="false" />
+    <option name="EXPR_CASE_WHEN_INDENT" value="false" />
+    <option name="EXPR_CASE_ELSE_ALIGN_THEN" value="true" />
+    <option name="EXPR_CASE_END" value="1" />
+    <option name="PRIMARY_KEY_NAME_TEMPLATE" value="PK_{table}" />
+    <option name="FOREIGN_KEY_NAME_TEMPLATE" value="FK_{table}_{ref_table}_{ref_columns}" />
+  </SqlCodeStyleSettings>
+  <bashpro>
+    <option name="SWITCH_CASES_INDENTED" value="true" />
+    <option name="REDIRECT_FOLLOWED_BY_SPACE" value="true" />
+    <option name="SIMPLIFY_CODE" value="true" />
+  </bashpro>
+  <codeStyleSettings language="HTML">
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="JAVA">
+    <option name="ALIGN_MULTILINE_BINARY_OPERATION" value="true" />
+    <option name="SPACE_WITHIN_ARRAY_INITIALIZER_BRACES" value="true" />
+    <option name="SPACE_WITHIN_EMPTY_ARRAY_INITIALIZER_BRACES" value="true" />
+    <option name="ENUM_CONSTANTS_WRAP" value="2" />
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+      <option name="SMART_TABS" value="true" />
+    </indentOptions>
+    <arrangement>
+      <groups>
+        <group>
+          <type>GETTERS_AND_SETTERS</type>
+          <order>KEEP</order>
+        </group>
+        <group>
+          <type>OVERRIDDEN_METHODS</type>
+          <order>KEEP</order>
+        </group>
+      </groups>
+    </arrangement>
+  </codeStyleSettings>
+  <codeStyleSettings language="SQL">
+    <option name="KEEP_LINE_BREAKS" value="false" />
+  </codeStyleSettings>
+  <codeStyleSettings language="XML">
+    <indentOptions>
+      <option name="USE_TAB_CHARACTER" value="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="kotlin">
+    <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
+  </codeStyleSettings>
+</code_scheme>

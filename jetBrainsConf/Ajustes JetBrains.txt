@@ -1,0 +1,23 @@
+###############################################################################################
+
+***	      CONFIGURACIÓN APLICACIONES JETBRAINS SAMUEL CASTRILLO DOMÍNGUEZ		***
+
+###############################################################################################
+
+Para borrar espacio por espacio -> Editor, General, Smart Keys, Unindent on Backspace -> Disabled
+
+Mostrar el popup de la documentación (200ms), Machine learning Java, full method signatures y parameter info popup (100ms), Match case off -> Editor, General, Code Completion
+
+Mostrar nombres de parámetros en llamadas a métodos -> Editor, Inlay hints
+
+Error stripe mark min height 2px, autoreparse delay = 120ms y editor tooltips = 200ms -> Editor, Code Editing
+
+Trailing spaces on save = All y no activar delete trailing spaces on caret line -> Editor, General
+
+FUENTES (line spacing 1.08)
+
+	- Monospaced 18.
+	- Ubuntu Mono 21 (Mejor representación) o 22 (Apretada).
+	- JetBrains Mono 18 o 19 (Muy bien las 2)
+	
+Non-modal commit interface para mostrar en la sidebar la pestaña de commit

@@ -1,0 +1,4 @@
+Como cambiar el nombre a un commit anterior
+
+git commit --amend -m "<Nuevo mensaje>"
+git push --force <nombre_rama> (normalmente origin)

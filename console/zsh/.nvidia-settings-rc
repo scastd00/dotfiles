@@ -1,0 +1,50 @@
+#
+# /home/samuel/.nvidia-settings-rc
+#
+# Configuration file for nvidia-settings - the NVIDIA X Server Settings utility
+# Generated on Fri May 27 13:24:10 2022
+#
+
+# ConfigProperties:
+
+RcFileLocale = C
+DisplayStatusBar = Yes
+SliderTextEntries = Yes
+IncludeDisplayNameInConfigFile = Yes
+ShowQuitDialog = No
+UpdateRulesOnProfileNameChange = Yes
+Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
+Timer = Thermal_Monitor_(GPU_0),Yes,1000
+Timer = Memory_Used_(GPU_0),Yes,3000
+
+# Attributes:
+
+samuel:1.0/SyncToVBlank=1
+samuel:1.0/LogAniso=0
+samuel:1.0/FSAA=0
+samuel:1.0/TextureClamping=1
+samuel:1.0/FXAA=0
+samuel:1.0/AllowFlipping=1
+samuel:1.0/FSAAAppControlled=1
+samuel:1.0/LogAnisoAppControlled=1
+samuel:1.0/OpenGLImageSettings=1
+samuel:1.0/FSAAAppEnhanced=0
+samuel:1.0/ShowGraphicsVisualIndicator=0
+samuel:1[DPY:HDMI-0]/Dithering=0
+samuel:1[DPY:HDMI-0]/DitheringMode=0
+samuel:1[DPY:HDMI-0]/DitheringDepth=0
+samuel:1[DPY:HDMI-0]/ColorSpace=0
+samuel:1[DPY:HDMI-0]/ColorRange=0
+samuel:1[DPY:HDMI-0]/SynchronousPaletteUpdates=0
+samuel:1[DPY:DP-0]/Dithering=0
+samuel:1[DPY:DP-0]/DitheringMode=0
+samuel:1[DPY:DP-0]/DitheringDepth=0
+samuel:1[DPY:DP-0]/ColorSpace=0
+samuel:1[DPY:DP-0]/ColorRange=0
+samuel:1[DPY:DP-0]/SynchronousPaletteUpdates=0
+samuel:1[DPY:DP-1]/Dithering=0
+samuel:1[DPY:DP-1]/DitheringMode=0
+samuel:1[DPY:DP-1]/DitheringDepth=0
+samuel:1[DPY:DP-1]/ColorSpace=0
+samuel:1[DPY:DP-1]/ColorRange=0
+samuel:1[DPY:DP-1]/SynchronousPaletteUpdates=0
