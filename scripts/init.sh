@@ -106,6 +106,8 @@ rm ~/OFL.txt ~/AUTHORS.txt && \
 sudo mkdir -p /usr/share/fonts/truetype/JetBrainsMono && \
 sudo mv ~/fonts/ttf/* /usr/share/fonts/truetype/JetBrainsMono && \
 fc-cache -f -v && \
+rm ~/JetBrainsMono-2.242.zip && \
+rm -rf ~/fonts && \
 
 # After this, install the suggested packages in other terminal
 
