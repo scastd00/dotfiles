@@ -1,9 +1,9 @@
 <scheme name="Custom theme" version="142" parent_scheme="Default">
   <metaInfo>
-    <property name="created">2022-06-22T19:03:58</property>
+    <property name="created">2022-08-26T17:56:12</property>
     <property name="ide">idea</property>
-    <property name="ideVersion">2022.1.1.0.0</property>
-    <property name="modified">2022-06-22T19:04:06</property>
+    <property name="ideVersion">2022.2.1.0.0</property>
+    <property name="modified">2022-08-26T17:56:27</property>
     <property name="originalScheme">Custom theme</property>
   </metaInfo>
   <colors>
@@ -12,6 +12,13 @@
     <option name="CARET_COLOR" value="e0e0e0" />
     <option name="CARET_ROW_COLOR" value="" />
     <option name="CONSOLE_BACKGROUND_KEY" value="" />
+    <option name="DIAGRAM_COARSE_GRID" value="515151" />
+    <option name="DIAGRAM_DEFAULT_EDGE" value="8e8e8e" />
+    <option name="DIAGRAM_FINE_GRID" value="383838" />
+    <option name="DIAGRAM_INNER_EDGE" value="eb00d7" />
+    <option name="DIAGRAM_NODE_BACKGROUND" value="505050" />
+    <option name="DIAGRAM_NODE_BORDER" value="ababab" />
+    <option name="DIAGRAM_NODE_HEADER" value="505050" />
     <option name="DOCUMENTATION_COLOR" value="404040" />
     <option name="DOC_COMMENT_GUIDE" value="6f6f6f" />
     <option name="ERROR_HINT" value="404040" />

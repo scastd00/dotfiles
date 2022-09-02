@@ -87,12 +87,6 @@ sudo snap install gimp && \
 sudo snap install qbittorrent-arnatious && \
 sudo snap install whatsie && \
 
-# Install Steam (Check if terminates the execution of the script at some point)
-echo 'Installing Steam' && \
-wget -O ~/steam.deb http://media.steampowered.com/client/installer/steam.deb && \
-sudo dpkg --install ~/steam.deb && \
-rm ~/steam.deb && \
-
 # Install aws-cli
 curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o ~/awscliv2.zip && \
 unzip ~/awscliv2.zip && \
@@ -108,6 +102,12 @@ sudo mv ~/fonts/ttf/* /usr/share/fonts/truetype/JetBrainsMono && \
 fc-cache -f -v && \
 rm ~/JetBrainsMono-2.242.zip && \
 rm -rf ~/fonts && \
+
+# Install Steam (Check if terminates the execution of the script at some point)
+echo 'Installing Steam' && \
+wget -O ~/steam.deb http://media.steampowered.com/client/installer/steam.deb && \
+sudo dpkg --install ~/steam.deb && \
+rm ~/steam.deb && \
 
 # After this, install the suggested packages in other terminal
 
