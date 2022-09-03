@@ -24,7 +24,7 @@ curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash && \
 
 echo 'Installing all the packages' && \
 sudo apt install -y git tree ant maven gradle wireless-tools net-tools openjdk-8-jdk openjdk-8-doc openjdk-8-source \
-	openjdk-17-jdk openjdk-17-doc openjdk-17-source gnome-shell-extensions preload \
+	openjdk-17-jdk openjdk-17-doc openjdk-17-source gnome-shell-extensions preload usb-creator-gtk \
 	font-manager python3.8 python3-pip python3-dev gnome-tweaks build-essential libusb-1.0-0-dev \
 	libudev-dev tcpdump traceroute gnome-disk-utility ipcalc rhythmbox zeal wireshark synaptic pulseaudio \
 	obs-studio mesa-vulkan-drivers nvidia-settings speedtest vulkan-tools apache2 \
