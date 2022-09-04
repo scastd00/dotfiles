@@ -17,7 +17,7 @@ for ((i = ${#display_list[@]} - 1; i >= 0; i--)); do
 
   case $display in
     # If integrated screen is adjusted first, the apparent refresh rate is 60Hz.
-    "HDMI-0") # External monitor first
+    "HDMI-1-0") # External monitor first
       if [ "$force" -eq "1" ]; then
         rate=60.00
         xrandr --output "$display" --mode 1920x1080 --rate $rate
@@ -26,7 +26,7 @@ for ((i = ${#display_list[@]} - 1; i >= 0; i--)); do
       rate=74.97
       ;;
 
-    "eDP-1-1") # Integrated screen
+    "eDP-1") # Integrated screen
       if [ "$force" -eq "1" ]; then
         rate=59.97
         xrandr --output "$display" --mode 1920x1080 --rate $rate
