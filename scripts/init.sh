@@ -66,39 +66,39 @@ timedatectl set-local-rtc 1 --adjust-system-clock && \
 
 # Install JetBrains Toolbox for managing installed versions of IDEs.
 echo 'Installing Jetbrains Toolbox' && \
-wget -O ~/jetbrains-toolbox-1.23.11731.tar.gz https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.23.11731.tar.gz && \
-tar xzvf ~/jetbrains-toolbox-1.23.11731.tar.gz -C ~/ && \
-~/jetbrains-toolbox-1.23.11731/jetbrains-toolbox && \
-rm ~/jetbrains-toolbox-1.23.11731.tar.gz && \
-rm -r ~/jetbrains-toolbox-1.23.11731 && \
+wget -O ~/jetbrains-toolbox.tar.gz https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.26.0.13072.tar.gz && \
+tar xzvf ~/jetbrains-toolbox.tar.gz -C ~/ && \
+~/jetbrains-toolbox/jetbrains-toolbox && \
+rm ~/jetbrains-toolbox.tar.gz && \
+rm -r ~/jetbrains-toolbox && \
 echo 'JetBrains Toolbox installed' && \
 
 # Install JetBrains Font in the system
-wget -O ~/JetBrainsMono-2.242.zip https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip && \
-unzip ~/JetBrainsMono-2.242.zip && \
+wget -O ~/JetBrainsMono.zip https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip && \
+unzip ~/JetBrainsMono.zip && \
 rm ~/OFL.txt ~/AUTHORS.txt && \
 sudo mkdir -p /usr/share/fonts/truetype/JetBrainsMono && \
 sudo mv ~/fonts/ttf/* /usr/share/fonts/truetype/JetBrainsMono && \
 fc-cache -f -v && \
-rm ~/JetBrainsMono-2.242.zip && \
+rm ~/JetBrainsMono.zip && \
 rm -rf ~/fonts && \
 echo 'JetBrainsMono font installed' && \
 
 # Install exa (colorful ls)
-wget -O ~/exa-linux-x86_64-v0.10.0.zip https://github.com/ogham/exa/releases/download/v0.10.0/exa-linux-x86_64-v0.10.0.zip && \
-unzip ~/exa-linux-x86_64-v0.10.0.zip -d ~/exaDir && \
+wget -O ~/exa-linux-x86_64.zip https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip && \
+unzip ~/exa-linux-x86_64.zip -d ~/exaDir && \
 sudo mv ~/exaDir/bin/exa /usr/local/bin && \
 sudo mv ~/exaDir/man/exa* /usr/share/man/man1 && \
 sudo mv ~/exaDir/completions/exa.zsh /usr/local/share/zsh/site-functions && \
-rm ~/exa-linux-x86_64-v0.10.0.zip && \
+rm ~/exa-linux-x86_64.zip && \
 rm -r ~/exaDir && \
 echo 'Exa installed' && \
 
 # Install gdrive (Google Drive CLI)
-wget -O ~/gdrive_2.1.1_linux_amd64.tar.gz https://github.com/prasmussen/gdrive/releases/download/2.1.1/gdrive_2.1.1_linux_amd64.tar.gz && \
-tar xzvf ~/gdrive_2.1.1_linux_amd64.tar.gz -C ~/ && \
+wget -O ~/gdrive_linux_amd64.tar.gz https://github.com/prasmussen/gdrive/releases/download/2.1.1/gdrive_2.1.1_linux_amd64.tar.gz && \
+tar xzvf ~/gdrive_linux_amd64.tar.gz -C ~/ && \
 sudo mv ~/gdrive /usr/local/bin && \
-rm ~/gdrive_2.1.1_linux_amd64.tar.gz && \
+rm ~/gdrive_linux_amd64.tar.gz && \
 echo 'gdrive installed' && \
 
 # Install all snaps
