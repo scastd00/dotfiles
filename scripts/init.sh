@@ -106,7 +106,6 @@ echo 'gdrive installed' && \
 # sudo snap install blender --channel=2.93lts/stable --classic && \
 # sudo snap install qbittorrent-arnatious && \
 sudo snap install postman && \
-sudo snap install discord && \
 sudo snap install code --classic && \
 sudo snap install gimp && \
 sudo snap install whatsie && \
@@ -136,6 +135,7 @@ echo '  · nvidia-driver-###' && \
 echo '  · nvm (install nodejs and npm lts) -> curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash' && \
 echo "  · rust -> curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh" && \
 echo '  · spotify-adblock (repo: https://github.com/abba23/spotify-adblock)' && \
+echo '  · Discord .deb package' && \
 echo '' && \
 echo 'You must configure the following programs manually:' && \
 echo '  · Terminal with zsh' && \
