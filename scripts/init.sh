@@ -30,7 +30,7 @@ sudo apt install -y git tree ant maven gradle wireless-tools net-tools openjdk-8
 	openjdk-17-jdk openjdk-17-doc openjdk-17-source gnome-shell-extensions preload usb-creator-gtk \
 	font-manager python3.10 python3-pip python3-dev gnome-tweaks build-essential libusb-1.0-0-dev \
 	libudev-dev tcpdump traceroute gnome-disk-utility ipcalc rhythmbox zeal wireshark synaptic pulseaudio \
-	obs-studio mesa-vulkan-drivers nvidia-settings vulkan-tools apache2 fuse ntfs-3g \
+	obs-studio mesa-vulkan-drivers nvidia-settings vulkan-tools apache2 \
 	ntpdate htop vlc mysql-server gparted touchegg libreoffice bleachbit zsh \
 	lm-sensors psensor bat boot-repair qdirstat musl xclip ffmpeg pciutils unrar gconf2 parallel \
 	whois docker-ce docker-ce-cli containerd.io docker-compose-plugin brave-browser && \
