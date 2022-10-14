@@ -23,7 +23,7 @@ curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.
 echo 'Installing all the packages' && \
 sudo apt install -y git tree wireless-tools net-tools openjdk-8-jdk openjdk-8-doc openjdk-8-source \
 	openjdk-17-jdk openjdk-17-doc openjdk-17-source python3-pip python3-dev build-essential htop \
-	tcpdump traceroute ipcalc apache2 speedtest ntpdate mysql-server bat xclip zip unzip unrar parallel \
+	tcpdump traceroute ipcalc apache2 speedtest ntpdate mysql-server xclip zip unzip unrar parallel \
 	whois docker-ce docker-ce-cli containerd.io docker-compose-plugin && \
 
 echo 'All packages installed' && \
@@ -38,8 +38,11 @@ pip install localstack && \
 echo 'Localstack installed' && \
 
 mkdir -p ~/.local/bin && \
-ln -s /usr/bin/batcat ~/.local/bin/bat && \
-echo 'bat linked' && \
+wget https://github.com/sharkdp/bat/releases/download/v0.22.1/bat_0.22.1_amd64.deb && \
+sudo dpkg -i bat_0.22.1_amd64.deb && \
+rm bat_0.22.1_amd64.deb && \
+echo 'alias cat="bat"' >> ~/.bashrc && \
+echo 'bat installed' && \
 
 # Install JetBrains Font in the system
 wget -O ~/JetBrainsMono.zip https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip && \
@@ -60,6 +63,7 @@ sudo mv ~/exaDir/man/exa* /usr/share/man/man1 && \
 sudo mv ~/exaDir/completions/exa.zsh /usr/local/share/zsh/site-functions && \
 rm ~/exa-linux-x86_64.zip && \
 rm -r ~/exaDir && \
+echo 'alias ls="exa"' >> ~/.bashrc && \
 echo 'Exa installed' && \
 
 # Install gdrive (Google Drive CLI)
