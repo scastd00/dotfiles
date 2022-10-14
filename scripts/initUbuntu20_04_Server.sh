@@ -23,7 +23,7 @@ curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.
 echo 'Installing all the packages' && \
 sudo apt install -y git tree maven wireless-tools net-tools openjdk-8-jdk openjdk-8-doc openjdk-8-source \
 	openjdk-17-jdk openjdk-17-doc openjdk-17-source python3-pip python3-dev build-essential htop \
-	tcpdump traceroute ipcalc apache2 speedtest ntpdate mysql-server bat xclip unrar parallel \
+	tcpdump traceroute ipcalc apache2 speedtest ntpdate mysql-server bat xclip zip unzip unrar parallel \
 	whois docker-ce docker-ce-cli containerd.io docker-compose-plugin && \
 
 echo 'All packages installed' && \
@@ -75,4 +75,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash 
 # After this, install the suggested packages in other terminal
 echo 'Completed installing all the Ubuntu packages' && \
 echo 'You must configure the following programs manually:' && \
+echo '  · Install nvm with the next command: nvm install --lts (after reloading the terminal)' && \
 echo '  · Git ssh keys' && \
+
+# Execution command
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/scastd00/dotfiles/main/scripts/initUbuntu20_04_Server.sh)"
