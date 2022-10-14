@@ -35,9 +35,6 @@ mkdir -p ~/.local/bin && \
 ln -s /usr/bin/batcat ~/.local/bin/bat && \
 echo 'bat linked' && \
 
-# Fix adjustment time between Windows and Ubuntu.
-timedatectl set-local-rtc 1 --adjust-system-clock && \
-
 # Install JetBrains Font in the system
 wget -O ~/JetBrainsMono.zip https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip && \
 unzip ~/JetBrainsMono.zip && \
@@ -73,11 +70,9 @@ sudo ~/aws/install && \
 rm ~/awscliv2.zip && \
 echo 'awscli installed' && \
 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash && \
+
 # After this, install the suggested packages in other terminal
 echo 'Completed installing all the Ubuntu packages' && \
-echo 'You must install the following packages manually:' && \
-echo '  · nvm (install nodejs and npm lts) -> curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash' && \
-echo "  · rust -> curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh" && \
-echo '' && \
 echo 'You must configure the following programs manually:' && \
 echo '  · Git ssh keys' && \
