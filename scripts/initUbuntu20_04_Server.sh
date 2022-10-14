@@ -21,12 +21,18 @@ curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.
 
 # ZSH ???
 echo 'Installing all the packages' && \
-sudo apt install -y git tree maven wireless-tools net-tools openjdk-8-jdk openjdk-8-doc openjdk-8-source \
+sudo apt install -y git tree wireless-tools net-tools openjdk-8-jdk openjdk-8-doc openjdk-8-source \
 	openjdk-17-jdk openjdk-17-doc openjdk-17-source python3-pip python3-dev build-essential htop \
 	tcpdump traceroute ipcalc apache2 speedtest ntpdate mysql-server bat xclip zip unzip unrar parallel \
 	whois docker-ce docker-ce-cli containerd.io docker-compose-plugin && \
 
 echo 'All packages installed' && \
+
+wget -O ~/maven.zip https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.zip && \
+unzip ~/maven.zip -d ~/ && \
+sudo mv ~/apache-maven-3.8.6 /opt && \
+rm ~/maven.zip && \
+echo 'Maven installed' && \
 
 pip install localstack && \
 echo 'Localstack installed' && \
