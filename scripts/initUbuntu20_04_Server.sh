@@ -28,11 +28,15 @@ sudo apt install -y git tree wireless-tools net-tools openjdk-8-jdk openjdk-8-do
 
 echo 'All packages installed' && \
 
+sudo usermod -aG docker $USER && \
+
 wget -O ~/maven.zip https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.zip && \
 unzip ~/maven.zip -d ~/ && \
 sudo mv ~/apache-maven-3.8.6 /opt && \
 rm ~/maven.zip && \
 echo 'Maven installed' && \
+
+sudo pip3 install pyOpenSSL --upgrade && \
 
 pip install localstack && \
 echo 'Localstack installed' && \
