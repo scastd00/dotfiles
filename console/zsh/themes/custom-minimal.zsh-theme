@@ -28,6 +28,7 @@ function get_right_prompt() {
 }
 
 PROMPT=$'$(print_exit_code)''\
+ %{$fg_bold[$USERCOLOR]%}$HOST\
  %{$fg_bold[yellow]%}[%'${CUSTOM_DIR_LEVELS:-1}'~]\
  %{${fg_bold[cyan]}%}$\
  %{$reset_color%}'
