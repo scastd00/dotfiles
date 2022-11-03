@@ -1,0 +1,17 @@
+<State>
+  <highlightingPatterns>
+    <LogHighlightingPattern enabled="true" pattern="^\s*e(rror)?\s*$" action="HIGHLIGHT_LINE" fg="-65536" bold="true" italic="false" stripe="true" uuid="de2d3bb2-78c9-4beb-835e-d483c35c07b6" />
+    <LogHighlightingPattern enabled="true" pattern="^\s*w(arn(ing)?)?\s*$" action="HIGHLIGHT_LINE" fg="-22016" bold="true" italic="false" stripe="true" uuid="484a24e1-3712-4e40-9d60-ca15e23bd774" />
+    <LogHighlightingPattern enabled="true" pattern="^\s*i(nfo)?\s*$" action="HIGHLIGHT_LINE" fg="-12599489" bold="false" italic="false" stripe="false" uuid="5e882ebc-2179-488b-8e1a-2fe488636f36" />
+    <LogHighlightingPattern enabled="true" pattern="^\s*d(ebug)?\s*$" action="HIGHLIGHT_LINE" fg="-16751139" bold="false" italic="false" stripe="false" uuid="aeaca695-16f3-4072-8026-082cd3f643a8" />
+    <LogHighlightingPattern enabled="true" pattern="^\s*t(race)?\s*$" action="HIGHLIGHT_FIELD" bold="false" italic="false" stripe="false" uuid="92af18f5-2949-4de9-bbbb-388cf7383383" />
+    <LogHighlightingPattern enabled="true" pattern="\s*Exception\s*" action="HIGHLIGHT_FIELD" fg="-65536" bold="false" italic="true" stripe="true" uuid="536d8ab7-7e9d-4c6f-a686-a231691b42a6" />
+  </highlightingPatterns>
+  <hiddenSubstrings />
+  <parsingPatterns />
+  <settingsVersion>6</settingsVersion>
+  <lastAddedDefaultFormat>-1</lastAddedDefaultFormat>
+  <errorStripeModel>heatmap</errorStripeModel>
+  <readonlySizeThreshold>16</readonlySizeThreshold>
+  <highlight_links>true</highlight_links>
+</State>
