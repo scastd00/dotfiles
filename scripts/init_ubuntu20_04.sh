@@ -23,17 +23,17 @@ echo 'Added keyrings for docker and brave-browser' && \
 sudo apt update -y && \
 
 # Install Speedtest
-# curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash && \
+curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash && \
 
 echo 'Installing all the packages' && \
 sudo apt install -y git tree ant maven gradle wireless-tools net-tools openjdk-8-jdk openjdk-8-doc openjdk-8-source \
 	openjdk-17-jdk openjdk-17-doc openjdk-17-source gnome-shell-extensions preload usb-creator-gtk \
 	font-manager python3.10 python3-pip python3-dev gnome-tweaks build-essential libusb-1.0-0-dev \
 	libudev-dev tcpdump traceroute gnome-disk-utility ipcalc rhythmbox zeal wireshark synaptic pulseaudio \
-	obs-studio mesa-vulkan-drivers nvidia-settings vulkan-tools apache2 \
+	obs-studio mesa-vulkan-drivers nvidia-settings vulkan-tools apache2 speedtest \
 	ntpdate htop vlc mysql-server gparted touchegg libreoffice bleachbit zsh \
 	lm-sensors psensor bat boot-repair qdirstat musl xclip ffmpeg pciutils unrar gconf2 parallel \
-	whois docker-ce docker-ce-cli containerd.io docker-compose-plugin brave-browser && \
+	whois docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose brave-browser && \
 
 echo 'All packages installed' && \
 
@@ -95,11 +95,11 @@ rm -r ~/exaDir && \
 echo 'Exa installed' && \
 
 # Install gdrive (Google Drive CLI)
-wget -O ~/gdrive_linux_amd64.tar.gz https://github.com/prasmussen/gdrive/releases/download/2.1.1/gdrive_2.1.1_linux_amd64.tar.gz && \
-tar xzvf ~/gdrive_linux_amd64.tar.gz -C ~/ && \
-sudo mv ~/gdrive /usr/local/bin && \
-rm ~/gdrive_linux_amd64.tar.gz && \
-echo 'gdrive installed' && \
+#wget -O ~/gdrive_linux_amd64.tar.gz https://github.com/prasmussen/gdrive/releases/download/2.1.1/gdrive_2.1.1_linux_amd64.tar.gz && \
+#tar xzvf ~/gdrive_linux_amd64.tar.gz -C ~/ && \
+#sudo mv ~/gdrive /usr/local/bin && \
+#rm ~/gdrive_linux_amd64.tar.gz && \
+#echo 'gdrive installed' && \
 
 # Install all snaps
 # sudo snap install notion-snap && \
@@ -126,7 +126,7 @@ rm ~/steam.deb && \
 echo 'Steam installed' && \
 
 # Minimize a window by clicking the icon in the dock
-gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize' && \
+#gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize' && \
 
 # After this, install the suggested packages in other terminal
 echo 'Completed installing all the Ubuntu packages' && \
