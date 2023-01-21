@@ -1,9 +1,9 @@
 <scheme name="Custom theme" version="142" parent_scheme="Default">
   <metaInfo>
-    <property name="created">2022-08-26T17:56:12</property>
+    <property name="created">2023-01-18T16:21:31</property>
     <property name="ide">idea</property>
-    <property name="ideVersion">2022.2.1.0.0</property>
-    <property name="modified">2022-08-26T17:56:27</property>
+    <property name="ideVersion">2022.3.0.0</property>
+    <property name="modified">2023-01-18T16:21:38</property>
     <property name="originalScheme">Custom theme</property>
   </metaInfo>
   <colors>
@@ -567,7 +567,6 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="GROOVY_KEYWORD" baseAttributes="JAVA_KEYWORD" />
     <option name="HTML_CODE">
       <value />
     </option>
@@ -854,6 +853,11 @@
     <option name="PUBLIC_REFERENCE">
       <value />
     </option>
+    <option name="PY.BUILTIN_NAME">
+      <value>
+        <option name="FOREGROUND" value="5656ff" />
+      </value>
+    </option>
     <option name="PY.PREDEFINED_DEFINITION">
       <value>
         <option name="FOREGROUND" value="a7e22e" />
@@ -1001,7 +1005,7 @@
     <option name="TEXT">
       <value>
         <option name="FOREGROUND" value="c7c7c7" />
-        <option name="BACKGROUND" value="26262d" />
+        <option name="BACKGROUND" value="25272a" />
       </value>
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
