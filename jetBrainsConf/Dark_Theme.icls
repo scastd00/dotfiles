@@ -1,10 +1,10 @@
-<scheme name="Custom theme" version="142" parent_scheme="Default">
+<scheme name="Dark_Theme" version="142" parent_scheme="Default">
   <metaInfo>
-    <property name="created">2023-01-18T16:21:31</property>
+    <property name="created">2023-01-26T14:38:31</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2022.3.0.0</property>
-    <property name="modified">2023-01-18T16:21:38</property>
-    <property name="originalScheme">Custom theme</property>
+    <property name="modified">2023-01-26T14:38:39</property>
+    <property name="originalScheme">Dark_Theme</property>
   </metaInfo>
   <colors>
     <option name="ADDED_LINES_COLOR" value="295622" />
@@ -645,6 +645,12 @@
     </option>
     <option name="INJECTED_LANGUAGE_FRAGMENT">
       <value />
+    </option>
+    <option name="INLAY_DEFAULT">
+      <value>
+        <option name="FOREGROUND" value="7a7a7a" />
+        <option name="BACKGROUND" value="393c40" />
+      </value>
     </option>
     <option name="INLINE_PARAMETER_HINT">
       <value>
