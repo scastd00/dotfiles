@@ -1,9 +1,9 @@
 <scheme name="Xcode Light" version="142" parent_scheme="Default">
   <metaInfo>
-    <property name="created">2023-01-26T14:37:13</property>
+    <property name="created">2023-02-04T13:25:38</property>
     <property name="ide">idea</property>
-    <property name="ideVersion">2022.3.0.0</property>
-    <property name="modified">2023-01-26T14:37:42</property>
+    <property name="ideVersion">2022.3.2.0.0</property>
+    <property name="modified">2023-02-04T13:25:45</property>
     <property name="originalScheme">_@user_Xcode Light</property>
   </metaInfo>
   <colors>
@@ -265,6 +265,13 @@
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
+    <option name="INFO_ATTRIBUTES">
+      <value>
+        <option name="EFFECT_COLOR" value="0" />
+        <option name="ERROR_STRIPE_COLOR" value="d9cfad" />
+        <option name="EFFECT_TYPE" value="2" />
+      </value>
+    </option>
     <option name="INSTANCE_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_INSTANCE_FIELD" />
     <option name="JS.GLOBAL_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
     <option name="JS.GLOBAL_VARIABLE" baseAttributes="DEFAULT_GLOBAL_VARIABLE" />
@@ -448,12 +455,6 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="TEXT">
-      <value>
-        <option name="FOREGROUND" value="0" />
-        <option name="BACKGROUND" value="ffffff" />
-      </value>
-    </option>
     <option name="TODO_DEFAULT_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="4a5560" />
@@ -474,6 +475,12 @@
     <option name="TYPE_PARAMETER_NAME_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="3900a0" />
+      </value>
+    </option>
+    <option name="TYPO">
+      <value>
+        <option name="EFFECT_COLOR" value="40e640" />
+        <option name="EFFECT_TYPE" value="4" />
       </value>
     </option>
     <option name="WRONG_REFERENCES_ATTRIBUTES">
