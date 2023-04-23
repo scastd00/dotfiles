@@ -3,7 +3,7 @@
 ## Create a user
 
 ```bash
-sudo useradd <username>
+sudo adduser <username>
 ```
 
 ## Add the user to a specific group
