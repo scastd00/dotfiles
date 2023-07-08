@@ -33,7 +33,8 @@ sudo apt install -y git tree ant maven gradle wireless-tools net-tools openjdk-8
 	obs-studio mesa-vulkan-drivers nvidia-settings vulkan-tools apache2 speedtest \
 	ntpdate htop vlc mysql-server gparted touchegg libreoffice bleachbit zsh \
 	lm-sensors psensor bat boot-repair qdirstat musl xclip ffmpeg pciutils unrar gconf2 parallel \
-	whois docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose brave-browser && \
+	whois docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose brave-browser \
+	linux-tools-common linux-tools-generic linux-tools-`uname -r` && \
 
 echo 'All packages installed' && \
 
@@ -141,4 +142,5 @@ echo '  · Terminal with zsh' && \
 echo '  · Git ssh keys' && \
 echo '  · Discord .deb package' && \
 echo '  · Arduino IDE' && \
+echo '  · Perf path in CLion for profiling' && \
 echo '  · Brave browser user and sync'
