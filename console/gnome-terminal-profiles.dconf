@@ -1,0 +1,15 @@
+[/]
+default='ae6ee2e0-d527-4f65-b894-150d29826d4a'
+list=['ae6ee2e0-d527-4f65-b894-150d29826d4a']
+
+[:ae6ee2e0-d527-4f65-b894-150d29826d4a]
+background-color='rgb(44,44,44)'
+cursor-shape='ibeam'
+default-size-columns=100
+font='JetBrains Mono Medium 12'
+foreground-color='rgb(230,230,230)'
+palette=['rgb(0,0,0)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(0,87,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=true
+visible-name='Custom'

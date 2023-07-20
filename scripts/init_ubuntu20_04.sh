@@ -34,7 +34,8 @@ sudo apt install -y git tree ant maven gradle wireless-tools net-tools openjdk-8
 	ntpdate htop vlc mysql-server gparted touchegg libreoffice bleachbit zsh \
 	lm-sensors psensor bat boot-repair qdirstat musl xclip ffmpeg pciutils unrar gconf2 parallel \
 	whois docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose brave-browser \
-	linux-tools-common linux-tools-generic linux-tools-`uname -r` && \
+	linux-tools-common linux-tools-generic linux-tools-"$(uname -r)" valgrind nvtop cmake \
+	texlive-full biber texlive-lang-spanish texlive-extra-utils sshpass libomp-dev libopenmpi-dev && \
 
 echo 'All packages installed' && \
 
@@ -108,8 +109,8 @@ echo 'Exa installed' && \
 # sudo snap install qbittorrent-arnatious && \
 sudo snap install postman && \
 sudo snap install code --classic && \
-sudo snap install gimp && \
 sudo snap install whatsie && \
+sudo snap install krita && \
 echo 'Snaps installed' && \
 
 # Install aws-cli
@@ -126,6 +127,27 @@ sudo dpkg --install ~/steam.deb && \
 rm ~/steam.deb && \
 echo 'Steam installed' && \
 
+# Configure terminal colors
+echo 'Configuring terminal colors' && \
+echo "[/]
+default='ae6ee2e0-d527-4f65-b894-150d29826d4a'
+list=['ae6ee2e0-d527-4f65-b894-150d29826d4a']
+
+[:ae6ee2e0-d527-4f65-b894-150d29826d4a]
+background-color='rgb(44,44,44)'
+cursor-shape='ibeam'
+default-size-columns=100
+font='JetBrains Mono Medium 12'
+foreground-color='rgb(230,230,230)'
+palette=['rgb(0,0,0)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(0,87,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=true
+visible-name='Custom'
+" > ~/.config/terminal/terminalColors.dconf && \
+dconf load /org/gnome/terminal/legacy/profiles:/ < ~/.config/terminal/terminalColors.dconf && \
+echo 'Terminal colors configured' && \
+
 # Minimize a window by clicking the icon in the dock
 #gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize' && \
 
@@ -141,6 +163,5 @@ echo 'You must configure the following programs manually:' && \
 echo '  · Terminal with zsh' && \
 echo '  · Git ssh keys' && \
 echo '  · Discord .deb package' && \
-echo '  · Arduino IDE' && \
 echo '  · Perf path in CLion for profiling' && \
 echo '  · Brave browser user and sync'
