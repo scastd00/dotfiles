@@ -28,7 +28,7 @@ curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.
 echo 'Installing all the packages' && \
 sudo apt install -y git tree ant maven gradle wireless-tools net-tools openjdk-8-jdk openjdk-8-doc openjdk-8-source \
 	openjdk-17-jdk openjdk-17-doc openjdk-17-source gnome-shell-extensions preload usb-creator-gtk \
-	font-manager python3.10 python3-pip python3-dev gnome-tweaks build-essential libusb-1.0-0-dev \
+	font-manager python3.9 python3-pip python3-dev gnome-tweaks build-essential libusb-1.0-0-dev \
 	libudev-dev tcpdump traceroute gnome-disk-utility ipcalc rhythmbox zeal wireshark synaptic pulseaudio \
 	obs-studio mesa-vulkan-drivers nvidia-settings vulkan-tools apache2 speedtest \
 	ntpdate htop vlc mysql-server gparted touchegg libreoffice bleachbit zsh \
@@ -56,8 +56,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 echo 'ZSH installed' && \
 
 # Install plugins for Oh My ZSH
-git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}"/plugins/zsh-autosuggestions && \
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}"/plugins/zsh-syntax-highlighting && \
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions && \
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting && \
 echo 'Syntax highlighting and autosuggestion plugins installed' && \
 
 # Be able to execute Wireshark from Ubuntu UI without running the command 'sudo wireshark' in the terminal
@@ -68,11 +68,11 @@ timedatectl set-local-rtc 1 --adjust-system-clock && \
 
 # Install JetBrains Toolbox for managing installed versions of IDEs.
 echo 'Installing Jetbrains Toolbox' && \
-wget -O ~/jetbrains-toolbox.tar.gz https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.26.0.13072.tar.gz && \
+wget -O ~/jetbrains-toolbox.tar.gz https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.28.1.15219.tar.gz && \
 tar xzvf ~/jetbrains-toolbox.tar.gz -C ~/ && \
-~/jetbrains-toolbox/jetbrains-toolbox && \
+~/jetbrains-toolbox-1.28.1.15219/jetbrains-toolbox && \
 rm ~/jetbrains-toolbox.tar.gz && \
-rm -r ~/jetbrains-toolbox && \
+rm -r ~/jetbrains-toolbox-1.28.1.15219 && \
 echo 'JetBrains Toolbox installed' && \
 
 # Install JetBrains Font in the system
@@ -129,6 +129,7 @@ echo 'Steam installed' && \
 
 # Configure terminal colors
 echo 'Configuring terminal colors' && \
+mkdir -p ~/.config/terminal && \
 echo "[/]
 default='ae6ee2e0-d527-4f65-b894-150d29826d4a'
 list=['ae6ee2e0-d527-4f65-b894-150d29826d4a']
@@ -147,6 +148,14 @@ visible-name='Custom'
 " > ~/.config/terminal/terminalColors.dconf && \
 dconf load /org/gnome/terminal/legacy/profiles:/ < ~/.config/terminal/terminalColors.dconf && \
 echo 'Terminal colors configured' && \
+
+# Install spotify
+curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg && \
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list && \
+sudo apt update && sudo apt install spotify-client && \
+
+# Install Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && \
 
 # Minimize a window by clicking the icon in the dock
 #gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize' && \
