@@ -35,7 +35,9 @@ sudo apt install -y git tree ant maven gradle wireless-tools net-tools openjdk-8
 	lm-sensors psensor bat boot-repair qdirstat musl xclip ffmpeg pciutils unrar gconf2 parallel \
 	whois docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose brave-browser \
 	linux-tools-common linux-tools-generic linux-tools-"$(uname -r)" valgrind nvtop cmake \
-	texlive-full biber texlive-lang-spanish texlive-extra-utils sshpass libomp-dev libopenmpi-dev && \
+	texlive-full biber texlive-lang-spanish texlive-extra-utils sshpass libomp-dev libopenmpi-dev \
+ 	libasound2-dev mesa-common-dev libx11-dev libxrandr-dev libxi-dev xorg-dev libgl1-mesa-dev \
+  	libglu1-mesa-dev libopenal-dev && \
 
 echo 'All packages installed' && \
 
@@ -165,7 +167,6 @@ echo 'Completed installing all the Ubuntu packages' && \
 echo 'You must install the following packages manually:' && \
 echo '  · nvidia-driver-###' && \
 echo '  · nvm (install nodejs and npm lts) -> curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash' && \
-echo "  · rust -> curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh" && \
 echo '  · spotify-adblock (repo: https://github.com/abba23/spotify-adblock)' && \
 echo '' && \
 echo 'You must configure the following programs manually:' && \
