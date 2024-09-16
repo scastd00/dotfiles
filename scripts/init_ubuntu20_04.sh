@@ -26,18 +26,18 @@ sudo apt update -y && \
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash && \
 
 echo 'Installing all the packages' && \
-sudo apt install -y git tree ant maven gradle wireless-tools net-tools openjdk-8-jdk openjdk-8-doc openjdk-8-source \
-	openjdk-17-jdk openjdk-17-doc openjdk-17-source gnome-shell-extensions preload usb-creator-gtk \
+sudo apt install -y git tree vim ant maven gradle wireless-tools net-tools gnome-shell-extensions preload usb-creator-gtk \
+	openjdk-8-jdk openjdk-8-doc openjdk-8-source openjdk-17-jdk openjdk-17-doc openjdk-17-source openjdk-21-jdk openjdk-21-doc openjdk-21-source \
 	font-manager python3.9 python3-pip python3-dev gnome-tweaks build-essential libusb-1.0-0-dev \
-	libudev-dev tcpdump traceroute gnome-disk-utility ipcalc rhythmbox zeal wireshark synaptic pulseaudio \
-	obs-studio mesa-vulkan-drivers nvidia-settings vulkan-tools apache2 speedtest \
-	ntpdate htop vlc mysql-server gparted touchegg libreoffice bleachbit zsh \
+	libudev-dev tcpdump traceroute gnome-disk-utility ipcalc rhythmbox zeal synaptic pulseaudio \
+	obs-studio mesa-vulkan-drivers nvidia-settings vulkan-tools speedtest piper nvidia-driver-535 \
+	ntpdate htop nvtop vlc mysql-server gparted libreoffice bleachbit zsh libssl-dev \
 	lm-sensors psensor bat boot-repair qdirstat musl xclip ffmpeg pciutils unrar gconf2 parallel \
 	whois docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose brave-browser \
-	linux-tools-common linux-tools-generic linux-tools-"$(uname -r)" valgrind nvtop cmake \
+	linux-tools-common linux-tools-generic linux-tools-"$(uname -r)" valgrind cmake krita \
 	texlive-full biber texlive-lang-spanish texlive-extra-utils sshpass libomp-dev libopenmpi-dev \
- 	libasound2-dev mesa-common-dev libx11-dev libxrandr-dev libxi-dev xorg-dev libgl1-mesa-dev \
-  	libglu1-mesa-dev libopenal-dev && \
+ 	libasound2-dev mesa-common-dev libx11-dev libxrandr-dev libxi-dev xorg-dev libgl1-mesa-dev inkscape \
+  	libglu1-mesa-dev libopenal-dev libdw-dev libevent-dev libhwloc-dev libpmix-dev cmatrix libncurses5 && \
 
 echo 'All packages installed' && \
 
@@ -70,15 +70,15 @@ timedatectl set-local-rtc 1 --adjust-system-clock && \
 
 # Install JetBrains Toolbox for managing installed versions of IDEs.
 echo 'Installing Jetbrains Toolbox' && \
-wget -O ~/jetbrains-toolbox.tar.gz https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.28.1.15219.tar.gz && \
+wget -O ~/jetbrains-toolbox.tar.gz https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.4.2.32922.tar.gz && \
 tar xzvf ~/jetbrains-toolbox.tar.gz -C ~/ && \
-~/jetbrains-toolbox-1.28.1.15219/jetbrains-toolbox && \
+~/jetbrains-toolbox-2.4.2.32922/jetbrains-toolbox && \
 rm ~/jetbrains-toolbox.tar.gz && \
-rm -r ~/jetbrains-toolbox-1.28.1.15219 && \
+rm -r ~/jetbrains-toolbox-2.4.2.32922 && \
 echo 'JetBrains Toolbox installed' && \
 
 # Install JetBrains Font in the system
-wget -O ~/JetBrainsMono.zip https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip && \
+wget -O ~/JetBrainsMono.zip https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip && \
 unzip ~/JetBrainsMono.zip && \
 rm ~/OFL.txt ~/AUTHORS.txt && \
 sudo mkdir -p /usr/share/fonts/truetype/JetBrainsMono && \
@@ -109,10 +109,10 @@ echo 'Exa installed' && \
 # sudo snap install notion-snap && \
 # sudo snap install blender --channel=2.93lts/stable --classic && \
 # sudo snap install qbittorrent-arnatious && \
+# sudo snap install krita && \
 sudo snap install postman && \
 sudo snap install code --classic && \
 sudo snap install whatsie && \
-sudo snap install krita && \
 echo 'Snaps installed' && \
 
 # Install aws-cli
@@ -152,7 +152,7 @@ dconf load /org/gnome/terminal/legacy/profiles:/ < ~/.config/terminal/terminalCo
 echo 'Terminal colors configured' && \
 
 # Install spotify
-curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg && \
+curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg && \
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list && \
 sudo apt update && sudo apt install spotify-client && \
 
@@ -165,8 +165,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && \
 # After this, install the suggested packages in other terminal
 echo 'Completed installing all the Ubuntu packages' && \
 echo 'You must install the following packages manually:' && \
-echo '  · nvidia-driver-###' && \
-echo '  · nvm (install nodejs and npm lts) -> curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash' && \
+echo '  · nvm (install nodejs and npm lts) -> curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash' && \
 echo '  · spotify-adblock (repo: https://github.com/abba23/spotify-adblock)' && \
 echo '' && \
 echo 'You must configure the following programs manually:' && \
