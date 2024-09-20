@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sudo add-apt-repository ppa:touchegg/stable && \
 sudo add-apt-repository ppa:yannubuntu/boot-repair && \
 echo 'apt-repositories added' && \
 
@@ -25,20 +24,22 @@ sudo apt update -y && \
 # Install Speedtest
 curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash && \
 
+# IMPORTANT NOTE: if the texlive installation freezes (running mtxrun --generate......), keep pressing the ENTER key until it unlocks
+
 echo 'Installing all the packages' && \
 sudo apt install -y git tree vim ant maven gradle wireless-tools net-tools gnome-shell-extensions preload usb-creator-gtk \
 	openjdk-8-jdk openjdk-8-doc openjdk-8-source openjdk-17-jdk openjdk-17-doc openjdk-17-source openjdk-21-jdk openjdk-21-doc openjdk-21-source \
 	font-manager python3.9 python3-pip python3-dev gnome-tweaks build-essential libusb-1.0-0-dev \
-	libudev-dev tcpdump traceroute gnome-disk-utility ipcalc rhythmbox zeal synaptic pulseaudio \
-	obs-studio mesa-vulkan-drivers nvidia-settings vulkan-tools speedtest piper nvidia-driver-535 \
-	ntpdate htop nvtop vlc mysql-server gparted libreoffice bleachbit zsh libssl-dev \
-	lm-sensors psensor bat boot-repair qdirstat musl xclip ffmpeg pciutils unrar gconf2 parallel \
+	libudev-dev tcpdump traceroute gnome-disk-utility ipcalc rhythmbox synaptic pulseaudio \
+	obs-studio mesa-vulkan-drivers nvidia-settings vulkan-tools speedtest piper \
+	ntpdate htop vlc mysql-server gparted libreoffice bleachbit zsh libssl-dev flex \
+	lm-sensors psensor bat boot-repair qdirstat musl xclip ffmpeg pciutils unrar gconf2 \
 	whois docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose brave-browser \
 	linux-tools-common linux-tools-generic linux-tools-"$(uname -r)" valgrind cmake krita \
 	texlive-full biber texlive-lang-spanish texlive-extra-utils sshpass libomp-dev libopenmpi-dev \
  	libasound2-dev mesa-common-dev libx11-dev libxrandr-dev libxi-dev xorg-dev libgl1-mesa-dev inkscape \
   	libglu1-mesa-dev libopenal-dev libdw-dev libevent-dev libhwloc-dev libpmix-dev cmatrix libncurses5 && \
-
+ 
 echo 'All packages installed' && \
 
 pip install localstack && \
@@ -61,9 +62,6 @@ echo 'ZSH installed' && \
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions && \
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting && \
 echo 'Syntax highlighting and autosuggestion plugins installed' && \
-
-# Be able to execute Wireshark from Ubuntu UI without running the command 'sudo wireshark' in the terminal
-sudo usermod -aG wireshark samuel && \
 
 # Fix adjustment time between Windows and Ubuntu.
 timedatectl set-local-rtc 1 --adjust-system-clock && \
