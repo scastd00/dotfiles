@@ -1,0 +1,14 @@
+{
+    "AllowOnlyFirst": false,
+    "Brightness": 100,
+    "CustomSettings": {
+        "cx": 47,
+        "cy": 0,
+        "shape": 0
+    },
+    "EffectClassName": "RadialRainbow",
+    "FPS": 60,
+    "RandomColors": false,
+    "Slider2Val": 35,
+    "Speed": 80
+}
