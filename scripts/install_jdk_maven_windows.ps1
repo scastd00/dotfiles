@@ -43,7 +43,7 @@ Remove-Item "apache-maven-3.9.9-bin.zip"
 
 # Print completion message
 Write-Host ""
-Write-Host "#####################################"
-Write-Host "JDK and Maven installation completed."
-Write-Host "#####################################"
+Write-Host -ForegroundColor Green "#####################################"
+Write-Host -ForegroundColor Green "JDK and Maven installation completed."
+Write-Host -ForegroundColor Green "#####################################"
 Write-Host ""
