@@ -28,6 +28,8 @@ if ($env:Path -notlike "*$mavenBin*") {
     Write-Host "Added $mavenBin to the PATH"
 }
 
+Write-Host "Environment variables updated."
+
 # Reload the environment variables
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path", [System.EnvironmentVariableTarget]::Machine)
 
